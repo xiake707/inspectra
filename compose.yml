@@ -1,0 +1,25 @@
+services:
+  mysql:
+    image: goinspector/mysql:1.0
+    container_name: mysql
+    networks:
+      - go-net
+
+  backend:
+    image: goinspector/backend:1.0
+    container_name: backend
+    networks:
+      - go-net
+
+  frontend:
+    image: goinspector/frontend:1.0
+    container_name: frontend
+    networks:
+      - go-net
+    ports:
+      - "8080:80"
+
+networks:
+  go-net:
+    name: go-net
+    driver: bridge

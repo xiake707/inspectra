@@ -1,0 +1,42 @@
+# Go-Inspector 主机配置文件
+# 支持两种格式:
+#
+# 格式一（简洁）: 仅 IP 列表
+#   servers:
+#     - 192.168.10.10
+#     - 192.168.10.20
+#
+# 格式二（完整）: 带认证信息
+#   servers:
+#     - host: 192.168.10.10
+#       user: root
+#       port: 22
+#       password: "your_password"
+#       # key_file: "/home/user/.ssh/id_rsa"
+
+global:
+  user: root          # 默认用户名
+  port: 22            # 默认 SSH 端口
+  password: "redhat"      # 可选：默认密码（不填则使用 SSH 密钥）
+  # key_file: ""      # 可选：指定密钥文件路径（不填则自动查找 ~/.ssh/id_rsa 和 ~/.ssh/id_ed25519）
+
+servers:
+  # ---- 简洁写法（使用 global 配置）----
+  - host: 192.168.122.147
+    user: "root"
+    port: 22
+    key_file: "/home/xwang/.ssh/id_ed25519"
+  - host: 192.168.122.18
+    user: "root"
+    port: 22
+    key_file: "/home/xwang/.ssh/id_rsa"
+
+  # ---- 完整写法（覆盖 global 配置）----
+  # - host: 192.168.10.40
+  #   user: admin
+  #   port: 2222
+  #   password: "p@ssw0rd"
+  #
+  # - host: 192.168.10.50
+  #   user: root
+  #   key_file: "~/.ssh/my_key"
