@@ -1,8 +1,42 @@
-# 项目介绍
+
+
+# 1. 项目介绍
+
+## 1.1. 项目结构及介绍
+
+> 整体结构
+
+```shell
+xwang@xwangl:~/ComputerStudy/FirstProject/inspectra$ tree
+.
+├── backend
+│   ├── api
+│   └── inspector
+├── compose.yml
+├── deploy
+│   ├── api
+│   ├── frontend
+│   └── mysql
+├── docs
+├── frontend
+└── README.md
+```
+
+> `backend/api`: 用来接收前端的请求并作出相应的处理。
+>
+> `backend/inspector`: 检查程序，基于go语言进行编写。使用ssh协议对节点进行检查
+>
+> `deploy`: 准备好的docker镜像制作上下文
+>
+> `docs`: `README.md`引用的图片等资源
+>
+> `frontend`: 前端应用
+
+**260909持续更新中...**
 
 
 
-# 部署步骤
+# 2. 部署步骤
 
 > 本项目基于docker服务运行，使用前需要自行配置好docker环境
 
@@ -53,4 +87,35 @@ docker compose up -d
 
 
 
-## 服务使用方法
+# 3. web界面讲解
+
+
+
+## 3.1. 总览界面介绍
+
+
+
+![overviewdata](./docs/image-overviewdata.png)
+
+> **界面展示：**12是静态数据暂时还没有修改，白天实习上班，晚上的时间还是分给更重要的事情。 
+
+![overview](./docs/image-overview.png)
+
+> **注意：**首次登陆数据库中没有数据，会显示上面的界面，需要手动添加主机
+
+
+
+## 3.2. 添加主机
+
+当在总览或者主机管理界面点击添加主机时，会触发添加主机业务逻辑。
+
+![addhostdata](./docs/image-addhostdata.png)
+
+> **界面展示：** 
+
+![addhost](./docs/image-addhost.png)
+
+
+
+**2026-09-09 正在更新...**
+
