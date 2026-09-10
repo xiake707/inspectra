@@ -125,15 +125,15 @@ const unconPercent = computed(() => toPercent(unconCount.value));
     <div class="stat-grid">
       <StatCard
         label="托管主机"
-        :value="hosts.length || 12"
-        detail="较上周 +2"
+        :value="hosts.length || 暂无托管主机"
+        detail="已托管主机"
         tone="blue"
         :icon="TrendCharts"
       />
       <StatCard
         label="健康状态"
         :value="`${passPercent}`"
-        :detail="`${passCount || 10} 台主机运行正常`"
+        :detail="`${passCount || 0} 台主机运行正常`"
         tone="green"
         :icon="CircleCheck"
       />

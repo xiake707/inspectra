@@ -32,9 +32,11 @@ xwang@xwangl:~/ComputerStudy/FirstProject/inspectra$ tree
 >
 > `frontend`: 前端应用
 
-**260909持续更新中...**
+## 1.2. 项目架构
 
+图片详细内容请参见 `docs/image-framework.png`。
 
+![overviewdata](./docs/image-framework.png)
 
 # 2. 部署步骤
 
@@ -117,5 +119,7 @@ docker compose up -d
 
 
 
-**2026-09-09 正在更新...**
+## 前端业务逻辑示意图：
+
+
 
