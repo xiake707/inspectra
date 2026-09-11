@@ -46,31 +46,31 @@ xwang@xwangl:~/ComputerStudy/FirstProject/inspectra$ tree
 
 ### `deploy/api/`目录下执行
 
-`goinspector/backend:1.0` 我的go使用的是官方包仓库，所以使用 `--build-arg`指定系统代理，**按需修改.**
+`goinspector/backend:1.1` 我的go使用的是官方包仓库，所以使用 `--build-arg`指定系统代理，**按需修改.**
 
 ```shell
-docker build --network=host --build-arg http_proxy=http://127.0.0.1:7890 --build-arg https_proxy=http://127.0.0.1:7890 -f Dockerfile -t goinspector/backend:1.0 ../../backend/
+docker build --network=host --build-arg http_proxy=http://127.0.0.1:7890 --build-arg https_proxy=http://127.0.0.1:7890 -f Dockerfile -t goinspector/backend:1.1 ../../backend/
 ```
 
 
 
 ### `deploy/frontend/`目录下执行
 
-`goinpector/frontend:1.0`
+`goinpector/frontend:1.1`
 
 ```shell
 cp *.conf ../../ # 将定制的nginx配置文件移动到镜像构建上下文的根目录上，为构建镜像做准备。
-docker build -f Dockerfile -t goinspector/frontend:1.0 ../../
+docker build -f Dockerfile -t goinspector/frontend:1.1 ../../
 ```
 
 
 
 ### `deploy/mysql/`目录下执行
 
-`goinpector/mysql:1.0`
+`goinpector/mysql:1.1`
 
 ```shell
-docker build -f Dockerfile -t goinspector/mysql:1.0 .
+docker build -f Dockerfile -t goinspector/mysql:1.1 .
 ```
 
 
