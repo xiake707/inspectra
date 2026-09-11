@@ -109,7 +109,7 @@ docker compose up -d
 
 ### 3.1.2. 具体主机节点状态展示
 
-![image-20260911200045278](/home/xwang/.config/Typora/typora-user-images/image-20260911200045278.png)
+![hosttrace](./docs/image-hosttrace.png)
 
 > 上面四个模块中，PASS，WARN，FAIL中的记录都是可以点击跳转的。**而`UNCON`中的记录，不能点击跳转**。
 >
