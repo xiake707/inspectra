@@ -71,8 +71,8 @@ const filteredHosts = computed(() => props.hosts.filter(h => `${h.Host || ''}`.t
       <el-icon>
         <InfoFilled/>
       </el-icon>
-      <div><b>数据尚未连接</b>
-        <p>当前列表来自 mock 数据。接入后端时，`GET /api/hosts` 的返回值会自动填充到这里。</p></div>
+      <div><b>数据尚已连接</b>
+        <p>当前列表来数据数据。首次部署数据库主机配置为空，请手动配置</p></div>
     </div>
   </section>
 </template>

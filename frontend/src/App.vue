@@ -191,9 +191,9 @@ onMounted(() => {
       <div class="sidebar-bottom">
         <div class="connection-state">
           <span class="status-dot"></span>
-          <span><b>数据层未连接</b><small>当前为静态演示模式</small></span>
+          <span><b>数据层已连接</b></span>
         </div>
-        <div class="sidebar-meta">v0.1.0 · Linux inspection</div>
+        <div class="sidebar-meta">v1.1 · Linux inspectra</div>
       </div>
     </aside>
     <main class="main-content">

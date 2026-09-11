@@ -7,8 +7,7 @@ import {
   Warning,
   Clock,
   Plus,
-  TrendCharts,
-  Monitor,
+  TrendCharts, Monitor,
 } from "@element-plus/icons-vue";
 import SectionHeading from "../components/SectionHeading.vue";
 import StatCard from "../components/StatCard.vue";

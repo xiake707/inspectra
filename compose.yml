@@ -1,18 +1,18 @@
 services:
   mysql:
-    image: goinspector/mysql:1.0
+    image: goinspector/mysql:1.1
     container_name: mysql
     networks:
       - go-net
 
   backend:
-    image: goinspector/backend:1.0
+    image: goinspector/backend:1.1
     container_name: backend
     networks:
       - go-net
 
   frontend:
-    image: goinspector/frontend:1.0
+    image: goinspector/frontend:1.1
     container_name: frontend
     networks:
       - go-net

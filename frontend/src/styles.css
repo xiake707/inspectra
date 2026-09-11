@@ -461,7 +461,7 @@ button {
 .status-dot {
   width: 8px;
   height: 8px;
-  background: #d0a056;
+  background: green;
   border-radius: 50%;
   display: inline-block;
   flex: none;
